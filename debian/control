@@ -1,0 +1,19 @@
+Source: project-x
+Section: utils
+Priority: optional
+Maintainer: Nicolas HOUDELOT <nicolas@demosdebs.org>
+Build-Depends: cdbs, debhelper (>= 5.0.38), default-jdk, liboro-java, libcommons-net-java
+XS-Python-Version: current
+Standards-Version: 3.9.7
+Homepage: http://sourceforge.net/projects/project-x
+
+Package: project-x
+Architecture: all
+Depends:${misc:Depends}, libcommons-net-java, default-jre | java2-runtime
+Description: DVB demuxing tool
+ European digital radio & television uses the DVB standard to broadcast its 
+ data. Project X gives you a look behind the transmissions and tries its 
+ best to handle & repair many stream types and shows what went wrong on 
+ reception.
+
+
